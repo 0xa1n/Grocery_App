@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.app.groccery_app.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_openGrocceryList"
+            app:destination="@id/grocceryListView" >
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/grocceryListView"
+        android:name="com.app.groccery_app.ui.main.GrocceryListView"
+        android:label="fragment_groccery_list_view"
+        tools:layout="@layout/fragment_groccery_list_view" >
+        <action
+            android:id="@+id/action_closeGrocceryList"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="day"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="month"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="year"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

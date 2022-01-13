@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Groceries App</string>
+    <string name="button_editList">Edit Groceries List</string>
+    <string name="button_saveList">Save Groceries List</string>
+    <string name="button_addGrocceryElement">Add Grocery</string>
+
+    <string name="textview_grocery_name">Grocery Name</string>
+    <string name="textview_grocery_amount">Grocery Amount</string>
+    <string name="textview_grocery_price">Grocery Price</string>
+</resources>
